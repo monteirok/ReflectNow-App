@@ -8,12 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9D1FB7EC2A02331D007ED85B /* ActivateRNIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FB7EB2A02331D007ED85B /* ActivateRNIntent.swift */; };
-		9D1FB7EF2A023B1B007ED85B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D1FB7EE2A023B1B007ED85B /* ViewModel.swift */; };
 		9D21019629FFC55C00335259 /* ReflectNowApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21019529FFC55C00335259 /* ReflectNowApp.swift */; };
 		9D21019829FFC55C00335259 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D21019729FFC55C00335259 /* ContentView.swift */; };
 		9D21019A29FFC55E00335259 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D21019929FFC55E00335259 /* Assets.xcassets */; };
 		9D21019D29FFC55E00335259 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D21019C29FFC55E00335259 /* Preview Assets.xcassets */; };
-		9D71C6232A03853800A461DC /* ReflectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D71C6222A03853800A461DC /* ReflectView.swift */; };
+		9DDC35852A03A66700F7F370 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDC35842A03A66700F7F370 /* ExerciseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,13 +40,12 @@
 
 /* Begin PBXFileReference section */
 		9D1FB7EB2A02331D007ED85B /* ActivateRNIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateRNIntent.swift; sourceTree = "<group>"; };
-		9D1FB7EE2A023B1B007ED85B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		9D21019229FFC55C00335259 /* ReflectNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReflectNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D21019529FFC55C00335259 /* ReflectNowApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectNowApp.swift; sourceTree = "<group>"; };
 		9D21019729FFC55C00335259 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 6; };
 		9D21019929FFC55E00335259 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D21019C29FFC55E00335259 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9D71C6222A03853800A461DC /* ReflectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectView.swift; sourceTree = "<group>"; };
+		9DDC35842A03A66700F7F370 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
 		9DE6CA012A02459A0091DFE0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				9DE6CA012A02459A0091DFE0 /* README.md */,
-				9D1FB7EE2A023B1B007ED85B /* ViewModel.swift */,
 				9D21019529FFC55C00335259 /* ReflectNowApp.swift */,
 				9D4C0EDB2A023E860027602D /* Views */,
 				9D4C0EDC2A023F4D0027602D /* Shortcuts */,
@@ -105,7 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				9D21019729FFC55C00335259 /* ContentView.swift */,
-				9D71C6222A03853800A461DC /* ReflectView.swift */,
+				9DDC35842A03A66700F7F370 /* ExerciseView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,8 +190,7 @@
 			files = (
 				9D1FB7EC2A02331D007ED85B /* ActivateRNIntent.swift in Sources */,
 				9D21019829FFC55C00335259 /* ContentView.swift in Sources */,
-				9D1FB7EF2A023B1B007ED85B /* ViewModel.swift in Sources */,
-				9D71C6232A03853800A461DC /* ReflectView.swift in Sources */,
+				9DDC35852A03A66700F7F370 /* ExerciseView.swift in Sources */,
 				9D21019629FFC55C00335259 /* ReflectNowApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,7 +315,6 @@
 		9D2101A129FFC55E00335259 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -328,9 +323,11 @@
 				DEVELOPMENT_TEAM = M2YR6M9FRM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ReflectNow-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -349,7 +346,6 @@
 		9D2101A229FFC55E00335259 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -358,9 +354,11 @@
 				DEVELOPMENT_TEAM = M2YR6M9FRM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ReflectNow-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -8,21 +8,15 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    static let color0 = Color(red: 25/255, green: 42/255, blue: 72/255);
-    
-    static let color1 = Color(red: 45/255, green: 72/255, blue: 122/255);
-    static let color2 = Color(red: 79/255, green: 112/255, blue: 176/255);
-    
     var body: some View {
         ZStack {
-            // app background
+            // set the background
+            Color(hue: 0.595, saturation: 0.655, brightness: 0.257)
+                .ignoresSafeArea()
+            // spacer
             Image(systemName: "rectangle")
-                .background(
-                    Color(hue: 0.595, saturation: 0.655, brightness: 0.257))
-                .foregroundColor(
-                    Color(hue: 0.595, saturation: 0.655, brightness: 0.257))
-                .font(.system(size: 1000))
+                .foregroundColor(Color(hue: 0.595, saturation: 0.655, brightness: 0.257))
+                .font(.system(size: 20))
             VStack(spacing: 30) {
                 Text("ReflectNow")
                     .accessibilitySortPriority(/*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
@@ -42,9 +36,13 @@ struct ContentView: View {
                             .font(.system(size: 147))
                             .padding(.bottom, 10))
                     .foregroundColor(Color(hue: 0.703, saturation: 0.234, brightness: 0.145))
+                Spacer()
                 Image("img")
-                    .font(.system(size: 20))
                     .padding(.top, 90)
+                // spacer
+                Image(systemName: "rectangle")
+                    .foregroundColor(Color(hue: 0.595, saturation: 0.655, brightness: 0.257))
+                    .font(.system(size: 20))
             }
         }
     }
@@ -55,4 +53,5 @@ struct ContentView: View {
                 .previewDevice("iPhone 14 Pro")
         }
     }
+    
 }

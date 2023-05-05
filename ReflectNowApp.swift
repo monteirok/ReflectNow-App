@@ -11,7 +11,8 @@ import SwiftUI
 struct ReflectNowApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // opens directly to
+            ExerciseView()
         }
     }
 }
